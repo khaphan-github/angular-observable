@@ -9,8 +9,14 @@ export class NotificationService {
    * Subject - Store not store finally data it recieved 
    * */
   // private notificationData$: Subject<any> = new Subject<any>;
+
+  // "BEHAVIOR" is default value when other component subcribe it;
   // private notificationData$: BehaviorSubject<any> = new BehaviorSubject<any> ("BEHAVIOR");
-  // private notificationData$: ReplaySubject<any> = new ReplaySubject<any>(1);  
+  
+  // "1" is numof element ReplaySubject Keep in it's cache;
+  // private notificationData$: ReplaySubject<any> = new ReplaySubject<any>(1); 
+
+  // EveryWhen AsyncSubject complete it will be removed;
    private notificationData$: AsyncSubject<any> = new AsyncSubject<any>;
 
 
